@@ -156,7 +156,7 @@ export default function TermsPage() {
           &copy; {new Date().getFullYear()} Grail App.
         </p>
         <div className="mt-4 space-x-4 text-sm font-medium">
-          <Link href="/privacy" className="text-slate-500 hover:text-indigo-600 transition-colors">
+          <Link href="/legal/privacy" className="text-slate-500 hover:text-indigo-600 transition-colors">
             Política de Privacidad
           </Link>
           <span className="text-slate-300">|</span>

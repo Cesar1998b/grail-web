@@ -153,7 +153,7 @@ export default function PrivacyPage() {
         </p>
         <div className="mt-4 space-x-4 text-sm font-medium">
           <Link
-            href="/terms"
+            href="/legal/terms"
             className="text-slate-500 hover:text-indigo-600 transition-colors"
           >
             Términos de Servicio
