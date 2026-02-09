@@ -217,7 +217,7 @@ const Hero = () => {
           {/* Mensaje de feedback flotante */}
           {state === "success" && (
             <div className="absolute -bottom-10 left-0 right-0 text-center animate-in fade-in slide-in-from-top-2">
-                <p className="text-sm text-green-600 font-medium">✨ ¡Estás dentro! Revisa tu correo.</p>
+                <p className="text-sm text-green-600 font-medium">{t.hero.successMessage}</p>
             </div>
           )}
         </motion.form>

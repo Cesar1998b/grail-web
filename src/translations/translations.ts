@@ -9,6 +9,7 @@ export const translations = {
             description: "Guarda lo que deseas de cualquier tienda, recibe alertas cuando baje el precio y comparte tus listas con quien quieras. Todo en un lugar.",
             placeholder: "tu@email.com",
             joinBetaButton: "Join Beta",
+            successMessage: "✨ ¡Estás dentro! Revisa tu correo.",
         },
         features: {
             title: "Tu asistente de compras inteligente",
@@ -57,6 +58,7 @@ export const translations = {
             description: "Save what you want from any store, get alerts when prices drop, and share your lists with anyone. Everything in one place.",
             placeholder: "your@email.com",
             joinBetaButton: "Join Beta",
+            successMessage: "✨ You're in! Check your email.",
         },
         features: {
             title: "Your smart shopping assistant",
