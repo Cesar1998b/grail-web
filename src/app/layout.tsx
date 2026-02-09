@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/context/LanguageContext";
 
-const inter = Inter({ subsets: ["latin"] });
+// Configuración premium de la fuente Geist (moderna y premium)
+const geist = Geist({ 
+  subsets: ["latin"],
+  variable: "--font-geist",
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://grailapp.dev"),
-  title: "Grail - Tu Wishlist Inteligente",
-  description: "Crea listas de deseos personalizadas y monitorea precios en tiempo real.",
+  title: "Grail: Tu Wishlist Inteligente",
+  description: "Captura productos, rastrea precios y organiza tus deseos.",
+  icons: {
+    icon: "/favicon.png", // Asegúrate de tener esto en /public
+  },
 };
 
 export default function RootLayout({
@@ -16,9 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
-      <body className={`${inter.className} bg-slate-50 antialiased`}>
-        {children}
+    <html lang="es" className="scroll-smooth">
+      <body className={`${geist.variable} font-sans bg-white antialiased selection:bg-amber-100 selection:text-slate-900`}>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

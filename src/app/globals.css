@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@tailwind utilities;
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -16,6 +18,23 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer base {
+  /* Asegura que la fuente se aplique a todo y el scroll sea suave */
+  html {
+    scroll-behavior: smooth;
+    @apply font-sans;
+  }
+  
+  body {
+    @apply bg-white antialiased;
+  }
+
+  /* Opcional: Si quieres que la tipografía masiva sea aún más apretada por defecto */
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tighter;
   }
 }
 
