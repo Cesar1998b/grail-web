@@ -40,11 +40,11 @@ export async function POST(req: Request) {
             Gracias por unirte a la lista de espera de <strong>Grail</strong>. Has dado el primer paso para tener el control total de tus deseos de compra.
           </p>
           
-          <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 30px 0;">
-            <p style="margin: 0; font-size: 14px; font-weight: 600; color: #111;">Próximos pasos:</p>
-            <p style="margin: 8px 0 0 0; font-size: 14px; color: #666;">
-              Recibirás una invitación oficial de <strong>Apple TestFlight</strong> en este correo tan pronto liberemos el siguiente lote de accesos.
-            </p>
+          <div style="background-color: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px; margin: 30px 0; text-align: center;">
+            <p style="margin: 0 0 16px 0; font-size: 14px; font-weight: 600; color: #111;">Únete a la Beta en TestFlight:</p>
+            <a href="https://testflight.apple.com/join/h3Fdr78G" style="display: inline-block; background-color: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 14px;">
+              Acceder a TestFlight
+            </a>
           </div>
 
           <p style="font-size: 14px; color: #888; margin-top: 40px; border-top: 1px solid #eaeaea; padding-top: 20px;">
